@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #103778, #007A78);
+    padding: 0 10%;
+}
+#logo{
+    width: auto;
+    padding: 20px 0;
+    cursor: pointer;
+    color:#FFC745;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: white;
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.content h1 span{
+    color: #FF936B;
+}
+.content button{
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    padding: 12px 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.content button img{
+    width: 15px;
+    margin-left: 10px;
+}
+.launch-time{
+    display: flex;
+}
+.launch-time div{
+    flex-basis: 110px;
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+    margin-left: -2px;
+}
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
